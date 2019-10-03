@@ -91,6 +91,7 @@ video {
 	font: inherit;
 	vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
 article,
 aside,
@@ -105,17 +106,21 @@ nav,
 section {
 	display: block;
 }
+
 body {
 	line-height: 1;
 }
+
 ol,
 ul {
 	list-style: none;
 }
+
 blockquote,
 q {
 	quotes: none;
 }
+
 blockquote:before,
 blockquote:after,
 q:before,
@@ -123,6 +128,7 @@ q:after {
 	content: '';
 	content: none;
 }
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
@@ -149,143 +155,104 @@ h5 {
 	margin-bottom: 15px;
 }
 
-/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+/* Your code starts here! */
 
-* {
-	color: black;
+html {
+	color: #333;
+	font-family: 'Be Vietnam', sans-serif;
 	font-size: 20px;
+	text-rendering: optimizeLegibility;
 }
 
 .row {
-	max-width: 50%;
+	max-width: 1140px;
 	margin: 0 auto;
 }
 
-header {
-	max-width: 900px;
-	margin: 0 auto;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 20px 0;
+nav {
+	padding: 32px;
+	background: #ddd;
+	position: fixed;
+	top: 0;
+	width: 100%;
 }
 
-h1 {
-	font-size: 2rem;
-}
-
-nav ul li a {
+nav a {
 	text-decoration: none;
-	color: #555;
+	color: #999;
+	margin-left: 50px;
+	vertical-align: middle;
 }
 
-nav ul {
-	list-style: none;
+nav img {
+	float: right;
 }
 
-nav ul li {
+.banner {
+	padding: 40px 0;
+	margin: 80px 0;
+}
+
+.text-box {
 	display: inline-block;
-	padding: 0 20px;
+	width: 60%;
+	text-align: center;
+	font-size: 5rem;
+	vertical-align: top;
 }
 
-nav ul li:nth-child(1) {
-	padding-left: 0;
+.img-box {
+	display: inline-block;
+	width: 39%;
+	text-align: center;
 }
 
-.info {
-	padding: 30px 0;
+.img-box img {
+	height: 100%;
 }
 
-.services-section {
-	padding: 0;
+.text-box h1 {
 }
 
-section {
-	max-width: 900px;
-	margin: 0 auto;
-	padding: 30px;
+.text-box a {
+	font-size: 1.5rem;
+	text-decoration: none;
+	color: black;
+	border: 1px solid black;
+	padding: 5px 50px;
+}
+
+section .row {
+	border: 1px solid black;
+	border-width: 1px 0;
+	padding: 40px 0;
 }
 
 section img {
+	display: block;
 	width: 100%;
-	height: auto;
+	margin: 10px 0;
 }
 
-.features {
-	max-width: 900px;
-	padding: 30px 0;
-	margin: 0 auto;
-	display: flex;
-	flex-wrap: wrap;
-	border-width: 1px 0 3px 0;
-	border-style: solid;
-	border-color: black;
-	justify-content: space-between;
-}
-
-.feature-box {
-	background: #ddd;
+.info {
+	display: inline-block;
+	width: 49%;
 	padding: 20px;
-	border: 1px solid black;
-	width: 48%;
-	margin-bottom: 32px;
 }
 
-.feature-box:nth-child(5),
-.feature-box:nth-child(6) {
-	margin-bottom: 0;
-}
-
-.feature-box p {
-	margin-bottom: 30px;
-	line-height: 1.4rem;
-}
-
-.feature-box a {
-	text-decoration: none;
-	padding: 5px 50px;
-	background: #fff;
-	border: 1px solid black;
-	border-radius: 5px;
-}
-
-.services {
-	max-width: 900px;
-	margin: 0 auto;
-	padding: 30px 0;
-	display: flex;
-	justify-content: space-between;
-}
-
-.services div {
-	width: 48%;
-}
-
-.services p {
-	margin-bottom: 16px;
-}
-
-.services ul {
-	list-style-type: square;
-	list-style-position: inside;
-}
-
-.services ul li {
-	padding: 8px 0;
-}
-
-.services img {
-	max-width: 48%;
-	height: auto;
+.third {
+	width: 33%;
 }
 
 footer {
-	padding: 30px 10%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	padding: 50px 0;
 }
 
 footer p {
-	padding: 10px;
+	text-align: center;
+}
+
+.number {
+	display: inline-block;
+	margin: 16px 0;
 }
